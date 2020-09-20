@@ -13,6 +13,9 @@ jobs:
 
     - name: List project files and java version
       run: |
+          echo $GITHUB_EVENT_NAME
+          echo $GITHUB_SHA
+          echo $GITHUB_WORKSPACE
           ls -ltr
           java -version
 
